@@ -6,15 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Works</title>
     <link rel="stylesheet" href="css/works.css">
+    <script>
+        const items = [{ /*ここに作品のデータを記入する、別のスクリプトかcssを用いてmodalに変数の値を代入させる(未完成、追加調査の必要あり)*/
+            "title" : "タイトル1",
+            "tag" : movie,
+            "img" : "debug-images/doggo.jpg",
+            "text" : "テキストテキストテキストテキスト"
+        },{
+            "title" : "タイトル2",
+            "tag" : photo,
+            "img" : "debug-images/mountain.jpg",
+            "text" : "テキストテキストテキストテキスト"
+        },{
+            "title" : "タイトル3",
+            "tag" : web,
+            "img" : "debug-images/seal.jpg",
+            "text" : "テキストテキストテキストテキスト"
+        }]
+    </script>
 </head>
-
+<!--bodyとfooterは後で追加-->
 <body>
     <header>
 
     </header>
 
     <hero>
-        <h1>WORK</h1>
+        <h1>WORKS</h1>
         <div class="tag">
             <p>All</p>
             <p>Movie</p>
@@ -29,21 +47,44 @@
         <ul>
             <li>
                 <div class="work-thumb">
-                    <img src="" alt="thumbnail">
+                    <img src="debug-images/doggo.jpg" alt="thumbnail">
                 </div>
             </li>
             <li>
                 <div class="work-thumb">
-                    <img src="" alt="thumbnail">
+                    <img src="debug-images/mountain.jpg" alt="thumbnail">
                 </div>
             </li>
             <li>
                 <div class="work-thumb">
-                    <img src="" alt="thumbnail">
+                    <img src="debug-images/seal.jpg" alt="thumbnail">
                 </div>
         </ul>
 
     </main>
+
+    <footer>
+
+    </footer>
+
+    <modal>
+        <!--画像をクリックした際のモーダルウィンドウの処理-->
+        <!--work-thumbのimgをクリックした際にモーダルウィンドウを表示する想定-->
+        <!--後任者用のテンプレート作成必須-->
+        <p class="close-btn">
+
+        </p>
+        <div class="Movie-works-detail">
+            <div class="works-detail-img">
+                <img src="debug-images/doggo.jpg" alt="thumbnail">
+            </div>
+            <div class="works-detail-text">
+                <h2>タイトル</h2>
+                <p class="tag-movie"></p>
+                <p></p>
+                
+        </div>
+    </modal>
 </body>
 
 </html>
