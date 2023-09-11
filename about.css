@@ -1,0 +1,45 @@
+html{
+    font-family: Noto Sans JP;
+    background-color: black;
+    color: white;
+}
+header{
+    width: 1243px;
+    height: 123px;
+}
+.top{
+    display: grid;
+    padding: calc(100vw * 94 / 1920);
+}
+.top h2{
+    font-size: calc(100vw * 64 / 1920);
+    margin: 0;
+}
+.top div{
+    display: grid;
+    justify-content: center;
+}
+.top img{
+    width: calc(100vw * 284 / 1920);
+    height: calc(100vw * 270 / 1920);
+    margin: auto;
+    margin-top: calc(100vh * 90 / 1080);
+    margin-bottom: calc(100vh * 125 / 1080);
+}
+.top p{
+    margin: 0;
+    width: calc(100vw * 922 / 1920);
+    height: calc(100vw * 267 / 1920);
+    font-size: calc(100vw * 20 / 1920);
+    line-height: 265.8%;
+}
+
+/* section skill */
+.skill div{
+
+}
+.skill div img{
+    width: calc(100vw * 143 / 1920);
+    height: calc(100vw * 143 / 1920);
+    margin-bottom: calc(1920 * 50 / 1920);
+}
