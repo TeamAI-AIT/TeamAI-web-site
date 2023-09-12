@@ -10,11 +10,15 @@
 html {
     scroll-behavior: smooth;
     font-size: 14px;
+    font-weight: normal;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
 
     --text-color: #eee;
-    --bg-color: #222
+    --bg-color: #222;
+
+    color: var(--text-color);
+    background-color: var(--bg-color);
 
     font-feature-settings: "palt";
 }
