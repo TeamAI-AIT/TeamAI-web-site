@@ -2,58 +2,25 @@ h2{
     font-size: 30px;
     margin: 0;
 }
-@media screen and (max-width:768px) {
-    h2{
-        font-size: 25px;
-        margin: 0;
-    }
-}
 .contact-container{
     display: flex;
     justify-content: center;
     margin: 50px 0;
 }
-@media screen and (max-width:768px) {
-    .contact-container{
-        display: flex;
-        justify-content: center;
-        margin: 50px 50px;
-        font-size: 8px;
-    }
-}
 .contact-container ul{
     margin: 30px auto;
     width: 90%;
-}
-@media screen and (max-width:768px) {
-    .contact-container ul{
-        margin: 30px 30px;
-        width: 90%;
-    }
 }
 .contact-container a{
     text-decoration: none;
     color: var(--bg-color);
     font-size: 20px;
-<<<<<<< Updated upstream
-}
-@media screen and (max-width:768px) {
-    .contact-container a{
-        text-decoration: none;
-        color: var(--text-color);
-        font-size: 15px;
-    }
 }
 .contact-container a span{
-=======
->>>>>>> Stashed changes
     line-height: 3;
 }
 .contact-container p{
     line-height: 2;
-<<<<<<< Updated upstream
-    letter-spacing: 1.5px;
-=======
 }
 
 .btn,
@@ -119,5 +86,4 @@ a.mail-btn:hover:before {
   
     color: #fff;
     border-radius: 50%;
->>>>>>> Stashed changes
 }
