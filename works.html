@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Works</title>
     <link rel="stylesheet" href="css/works.css">
-    <script>    //作品情報をidに基づいてモーダルウィンドウに表示するスクリプト
+    
+    <script>    //最終的には単一のjsファイルに移動させる
+    //作品情報をidに基づいてモーダルウィンドウに表示するスクリプト
         const items = [{ /*ここに作品のデータを記入する、別のスクリプトかcssを用いてmodalに変数の値を代入させる(未完成、追加調査の必要あり)*/
             "title" : "タイトル1",
             "tag" : movie,
@@ -32,7 +34,7 @@
 
     // モーダルウィンドウの表示内容を更新
     document.querySelector("#modal-window h2").textContent = "作品名：" + img.src.split("/")[3];
-    document.querySelector("#modal-window p").textContent = "作品概要：作品の概要です。";
+    document.querySelector("#modal-window p").textContent = "作品概要 ： " + items[];
     document.querySelector("#modal-window p").textContent = "作品タグ：作品のタグです。";
 
     // モーダルウィンドウを表示
