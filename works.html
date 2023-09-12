@@ -36,7 +36,7 @@
                 const id = img.id;
                 // 画像のidタグだけを返す
                 return id;
-            }else{  //画像要素でない場合、処理中断
+            } else {  //画像要素でない場合、処理中断
                 return 0;
             }
 
@@ -48,9 +48,9 @@
 
             // モーダルウィンドウの表示内容を更新
             document.querySelector("#modal-window img").src = items[id].img;
-            document.querySelector("#modal-window h2").textContent = items[id].title;
-            document.querySelector("#modal-window p").textContent = items[id].text;
-            document.querySelector("#modal-window p").textContent = items[id].tag;
+            document.querySelector("#modal-window .works-detail-text h2").textContent = items[id].title;
+            document.querySelector("#modal-window .works-detail-text p").textContent = items[id].text;
+            document.querySelector("#modal-window .works-detail-text p").textContent = items[id].tag;
 
             // モーダルウィンドウを表示
             document.querySelector("#modal-window").style.display = "block";
@@ -101,22 +101,25 @@
     </footer>
 
     <modal>
-        <!--画像をクリックした際のモーダルウィンドウの処理-->
-        <!--work-thumbのimgをクリックした際にモーダルウィンドウを表示する想定-->
-        <!--後任者用のテンプレート作成必須-->
-        <p class="close-btn">
+        <div id="modal-window">
+            <!--画像をクリックした際のモーダルウィンドウの処理-->
+            <!--work-thumbのimgをクリックした際にモーダルウィンドウを表示する想定-->
+            <!--後任者用のテンプレート作成必須-->
+            <p class="close-btn">
 
-        </p>
-        <div class="Movie-works-detail">
-            <div class="works-detail-img">
-                <img src="debug-images/doggo.jpg" alt="thumbnail">
-            </div>
-            <div class="works-detail-text">
-                <h2>タイトル</h2>
-                <p class="tag-movie"></p>
-                <p></p>
+            </p>
+            <div class="Movie-works-detail">
+                <div class="works-detail-img">
+                    <img src="debug-images/doggo.jpg" alt="thumbnail">
+                </div>
+                <div class="works-detail-text">
+                    <h2><!--作品タイトル-->></h2>
+                    <p><!--作品概要-->></p>
+                    <p><!--作品タグ-->></p>
 
+                </div>
             </div>
+        </div>
     </modal>
 </body>
 
