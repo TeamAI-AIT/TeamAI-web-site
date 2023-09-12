@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works</title>
+    <link rel="stylesheet" href="css/works.css">
+
+    <script>    //画像のidタグのデータだけを抜き取るスクリプト
+        // 画像をクリックした際に、画像のidタグだけを取得
+        function getClickedImageId() {
+            // イベントオブジェクトから画像要素を取得
+            const event = event;
+            const img = event.target;
+
+            // 画像のid属性を取得
+            const id = img.id;
+
+            // 画像のidタグだけを返す
+            return id;
+        }
+    </script>
+    <script>    //最終的には単一のjsファイルに移動させる
+        //作品情報をidに基づいてモーダルウィンドウに表示するスクリプト
+        const items = [{ /*ここに作品のデータを記入する、別のスクリプトかcssを用いてmodalに変数の値を代入させる(未完成、追加調査の必要あり)*/
+            "title": "タイトル1",
+            "tag": movie,
+            "img": "debug-images/doggo.jpg",
+            "text": "テキストテキストテキストテキスト"
+        }, {
+            "title": "タイトル2",
+            "tag": photo,
+            "img": "debug-images/mountain.jpg",
+            "text": "テキストテキストテキストテキスト"
+        }, {
+            "title": "タイトル3",
+            "tag": web,
+            "img": "debug-images/seal.jpg",
+            "text": "テキストテキストテキストテキスト"
+        },
+            // 作品の画像要素に含まれるidと配列の番号を一致させ、id(配列番号)を取得することで、modalに表示するデータを取得する
+            let id = 0
+        // id
+        function showModalWindow() {
+            // 画像のid属性から画像を特定
+            const img = document.getElementById("image1");
+
+            // モーダルウィンドウの表示内容を更新
+            document.querySelector("#modal-window h2").textContent = "作品名：" + img.src.split("/")[3];
+            document.querySelector("#modal-window p").textContent = "作品概要 ： " + items[];
+            document.querySelector("#modal-window p").textContent = "作品タグ：作品のタグです。";
+
+            // モーダルウィンドウを表示
+            document.querySelector("#modal-window").style.display = "block";
+        }
+        ]
+    </scrip >
+</head >
+            <!--bodyとfooterは後で追加-->
+            <body>
+                <header>
+
+                </header>
+
+                <hero>
+                    <h1>WORKS</h1>
+                    <div class="tag">
+                        <p>All</p>
+                        <p>Movie</p>
+                        <p>Photo</p>
+                        <p>Web</p>
+                        <p>3DCG</p>
+                    </div>
+
+                </hero>
+
+                <main>
+                    <ul>
+                        <li>
+                            <div class="work-thumb" id="01">
+                                <img src="debug-images/doggo.jpg" alt="thumbnail">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="work-thumb" id="02">
+                                <img src="debug-images/mountain.jpg" alt="thumbnail">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="work-thumb" id="03">
+                                <img src="debug-images/seal.jpg" alt="thumbnail">
+                            </div>
+                    </ul>
+
+                </main>
+
+                <footer>
+
+                </footer>
+
+                <modal>
+                    <!--画像をクリックした際のモーダルウィンドウの処理-->
+                    <!--work-thumbのimgをクリックした際にモーダルウィンドウを表示する想定-->
+                    <!--後任者用のテンプレート作成必須-->
+                    <p class="close-btn">
+
+                    </p>
+                    <div class="Movie-works-detail">
+                        <div class="works-detail-img">
+                            <img src="debug-images/doggo.jpg" alt="thumbnail">
+                        </div>
+                        <div class="works-detail-text">
+                            <h2>タイトル</h2>
+                            <p class="tag-movie"></p>
+                            <p></p>
+
+                        </div>
+                </modal>
+            </body>
+
+</html >
