@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Works</title>
     <link rel="stylesheet" href="css/works.css">
-    <script>
+    <script>    //作品情報をidに基づいてモーダルウィンドウに表示するスクリプト
         const items = [{ /*ここに作品のデータを記入する、別のスクリプトかcssを用いてmodalに変数の値を代入させる(未完成、追加調査の必要あり)*/
             "title" : "タイトル1",
             "tag" : movie,
@@ -22,7 +22,11 @@
             "tag" : web,
             "img" : "debug-images/seal.jpg",
             "text" : "テキストテキストテキストテキスト"
-        }]
+        },
+        // 作品の画像要素に含まれるidと配列の番号を一致させ、id(配列番号)を取得することで、modalに表示するデータを取得する
+        let id = 0
+        // id
+    ]
     </script>
 </head>
 <!--bodyとfooterは後で追加-->
@@ -46,17 +50,17 @@
     <main>
         <ul>
             <li>
-                <div class="work-thumb">
+                <div class="work-thumb" id="01">
                     <img src="debug-images/doggo.jpg" alt="thumbnail">
                 </div>
             </li>
             <li>
-                <div class="work-thumb">
+                <div class="work-thumb" id="02">
                     <img src="debug-images/mountain.jpg" alt="thumbnail">
                 </div>
             </li>
             <li>
-                <div class="work-thumb">
+                <div class="work-thumb" id="03">
                     <img src="debug-images/seal.jpg" alt="thumbnail">
                 </div>
         </ul>
