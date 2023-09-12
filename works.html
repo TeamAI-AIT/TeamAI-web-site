@@ -26,6 +26,18 @@
         // 作品の画像要素に含まれるidと配列の番号を一致させ、id(配列番号)を取得することで、modalに表示するデータを取得する
         let id = 0
         // id
+        function showModalWindow() {
+    // 画像のid属性から画像を特定
+    const img = document.getElementById("image1");
+
+    // モーダルウィンドウの表示内容を更新
+    document.querySelector("#modal-window h2").textContent = "作品名：" + img.src.split("/")[3];
+    document.querySelector("#modal-window p").textContent = "作品概要：作品の概要です。";
+    document.querySelector("#modal-window p").textContent = "作品タグ：作品のタグです。";
+
+    // モーダルウィンドウを表示
+    document.querySelector("#modal-window").style.display = "block";
+}
     ]
     </script>
 </head>
