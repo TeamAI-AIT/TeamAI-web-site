@@ -1,0 +1,24 @@
+
+header{
+    width: 1243px;
+    height: 123px;
+}
+.contact-text{
+    display: grid;
+    padding: calc(100vw * 94 / 1920);
+}
+h2{
+    font-size: calc(100vw * 64 / 1920);
+    margin: 0;
+}
+.contact-text{
+    display: grid;
+    justify-content: center;
+}
+.contact-text p{
+    margin: 0;
+    width: calc(100vw * 922 / 1920);
+    height: calc(100vw * 267 / 1920);
+    font-size: calc(100vw * 20 / 1920);
+    line-height: 265.8%;
+}
