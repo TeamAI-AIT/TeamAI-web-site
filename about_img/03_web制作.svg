@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Web" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke-dasharray: 0 12;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m10.47,64.62V15.38c0-2.71,2.2-4.91,4.91-4.91h69.24c2.71,0,4.91,2.2,4.91,4.91v69.24c0,2.71-2.2,4.91-4.91,4.91H15.38c-2.71,0-4.91-2.2-4.91-4.91"/>
+  <circle class="cls-3" cx="78.44" cy="21.51" r="2.63"/>
+  <circle class="cls-3" cx="67.19" cy="21.51" r="2.63"/>
+  <circle class="cls-3" cx="55.95" cy="21.51" r="2.63"/>
+  <line class="cls-1" x1="23.02" y1="47.82" x2="53.8" y2="47.82"/>
+  <line class="cls-2" x1="23.02" y1="58.64" x2="65.23" y2="58.64"/>
+  <line class="cls-1" x1="23.02" y1="71.21" x2="69.28" y2="71.21"/>
+  <line class="cls-1" x1="10.47" y1="31.45" x2="89.53" y2="31.45"/>
+</svg>

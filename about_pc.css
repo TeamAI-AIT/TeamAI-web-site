@@ -1,10 +1,11 @@
 header{
-    width: 1243px;
+    width: 100vw;
     height: 123px;
 }
 .top{
     display: grid;
-    padding: calc(100vw * 94 / 1920);
+    padding-left: calc(100vw * 94 / 1920);
+    padding-right: calc(100vw * 94 / 1920);
 }
 .top h2{
     font-size: calc(100vw * 64 / 1920);
@@ -30,10 +31,15 @@ header{
 }
 
 /* section skill */
+.skill{
+    margin-top: calc(100vw * 300 / 1920);
+}
 .skill .box{
+    position: relative;
     display: flex;
     justify-content: center;
     gap: calc(100vw * 90 / 1920);
+    left: calc(100vw * -20 / 1920);
 }
 .skill .box div{
     display: grid;
@@ -50,6 +56,7 @@ header{
     font-size: calc(100vw * 20 / 1920);
 }
 
+/* section flow */
 .flow{
     display: grid;
     justify-content: center;
@@ -57,21 +64,32 @@ header{
 }
 .flow h3{
     text-align: center;
+    margin-bottom: calc(100vw * 80 / 1920);
+    font-size: calc(100vw * 40 / 1920);
 }
-.flow div{
+.flow .box{
     display: flex;
+    width: calc(100vw * 860 / 1920);
+    height: calc(100vw * 160 / 1920);
 }
-.flow div .num{
-    display: grid;
+.flow .box .num{
+    display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
-    width: calc(100vw * 75 / 1920);
-    height: calc(100vw * 75 / 1920);
-    font-size: calc(100vw * 22 / 1920);
-    border: 1px solid white;
+    width: calc(100vw * 77 / 1920);
+    height: calc(100vw * 77 / 1920);
+    background: #222;
     border-radius: 100px;
-    margin-right: calc(100vw * 85 / 1920);
+    border: 2px solid white;
+    margin: auto 0;
 }
-.div .heading{
-
+.flow .box .content{
+    display: flex;
+    width: calc(100vw * 783 / 1920);
+    height: calc(100vw * 160 / 1920);
+}
+.flow .box .content .heading{
+    display: flex
+    width: calc(100vw * );
 }

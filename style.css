@@ -10,10 +10,13 @@
 html {
     scroll-behavior: smooth;
     font-size: 14pt;
-    font-family: 'Noto Serif JP',serif;
+    font-family: 'Noto Serif JP';
 
     --text-color: #eee;
-    --bg-color: #222
+    --bg-color: #222;
+
+    background-color: #222;
+    color: #eee;
 
     font-feature-settings: "palt";
 }

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_3dcg" data-name="3dcg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke: #fff;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <line class="cls-1" x1="51.5" y1="85.4" x2="51.39" y2="54.12"/>
+  <line class="cls-1" x1="47.9" y1="47.98" x2="21.01" y2="32.35"/>
+  <line class="cls-1" x1="17.5" y1="66.27" x2="17.5" y2="34.36"/>
+  <line class="cls-3" x1="47.37" y1="86.81" x2="27.73" y2="75.48"/>
+  <line class="cls-1" x1="82.15" y1="71.62" x2="54.92" y2="87.23"/>
+  <line class="cls-3" x1="76.41" y1="35.56" x2="55.61" y2="47.57"/>
+  <polyline class="cls-3" points="51.4 54.7 51.41 57.42 51.49 84.26"/>
+  <line class="cls-3" x1="85.7" y1="64.31" x2="85.51" y2="35.5"/>
+  <line class="cls-1" x1="81.9" y1="28.21" x2="55.07" y2="12.51"/>
+  <line class="cls-1" x1="47.96" y1="12.59" x2="21.07" y2="28.23"/>
+  <circle class="cls-2" cx="85.49" cy="30.24" r="4.12"/>
+  <circle class="cls-2" cx="51.49" cy="10.47" r="4.12"/>
+  <circle class="cls-2" cx="17.48" cy="30.24" r="4.12"/>
+  <circle class="cls-2" cx="17.49" cy="70.38" r="4.12"/>
+  <circle class="cls-2" cx="51.49" cy="89.53" r="4.12"/>
+  <circle class="cls-2" cx="85.72" cy="69.57" r="4.12"/>
+  <circle class="cls-2" cx="51.49" cy="50" r="4.12"/>
+</svg>
