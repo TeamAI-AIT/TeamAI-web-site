@@ -55,9 +55,25 @@ header {
     padding: 0 62px;
     z-index: 99;
 }
+header h1 {
+    display: flex;
+    align-items: end;
+}
 header li {
     transform: translateY(-124px);
     opacity: 0;
+}
+.header_list {
+    display: block;
+    height: auto;
+    text-decoration: none;
+}
+.header_list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin-bottom: 12px;
 }
 .header_list:hover {
     text-decoration: underline;
@@ -96,10 +112,27 @@ header li {
     bottom: 0;
 }
 
+.SNS_link > img {
+    height: 30px;
+}
+
+
+
+
+.footer_logo {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
 
 
 /* PC display */
 @media (width >= 758px) {
+    .header_list {
+        display: flex;
+        height: auto;
+    }
 }
 /*
 =======
