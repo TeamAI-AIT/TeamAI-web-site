@@ -1,8 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::after, *::before {
+    box-sizing: inherit;
+}
+:root,
+html {
+    scroll-behavior: smooth;
+    font-size: 14pt;
+    font-family: 'Noto Serif JP',serif;
+
+    --text-color: #eee;
+    --bg-color: #222
+
+    font-feature-settings: "palt";
+}
+
+
+
+
+
+
 body {
-    background-color: black;
+    background-color: var(--bg-color);
 }
 a {
-    color: white;
+    color: var(--text-color);
 }
 li {
     list-style: none;
@@ -12,6 +37,7 @@ li {
 
 /* header */
 header {
+    background-color: var(--bg-color);
     position: fixed;
     left: 0;
     top: 0;
@@ -35,29 +61,33 @@ header li {
 
 .hamburger {
     display: flex;
-    height: 60px;
-    width: 60px;
+    height: 30px;
+    width: 28px;
     justify-content: center;
     align-items: center;
     position: relative;
     z-index: 100;
 }
-.hamburger span,.hamburger span::before,.hamburger span::after {
-    content: '';
+.hamburger > span {
+    background-color: var(--text-color);
     display: block;
-    height: 3px;
-    width: 24px;
-    border-radius: 3px;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 15px;
 }
-.hamburger span::before {
-    bottom: 8px;
+.hamburger > span:nth-child(1) {
+    top: 0;
 }
-.hamburger span::after {
-    top: 8px;
+.hamburger > span:nth-child(2) {
+    top: 13px;
 }
+.hamburger > span:nth-child(3) {
+    bottom: 0;
+}
+
 
 
 /* PC display */
 @media (width >= 758px) {
-
 }
