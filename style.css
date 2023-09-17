@@ -1,3 +1,4 @@
+/* <<<<<<< Updated upstream */
 * {
     margin: 0;
     padding: 0;
@@ -9,14 +10,147 @@
 :root,
 html {
     scroll-behavior: smooth;
+<<<<<<< HEAD
     font-size: 14pt;
     font-family: 'Noto Serif JP';
+=======
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+>>>>>>> 0a4fdaf1e38f69c0efea084a3c87854079b69f3a
 
     --text-color: #eee;
     --bg-color: #222;
 
+<<<<<<< HEAD
     background-color: #222;
     color: #eee;
+=======
+    color: var(--text-color);
+    background-color: var(--bg-color);
+>>>>>>> 0a4fdaf1e38f69c0efea084a3c87854079b69f3a
 
     font-feature-settings: "palt";
 }
+/* <<<<<<< HEAD */
+
+
+
+
+
+
+body {
+    background-color: var(--bg-color);
+}
+a {
+    color: var(--text-color);
+}
+li {
+    list-style: none;
+}
+
+
+
+/* header */
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 124px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 62px;
+    z-index: 99;
+}
+header h1 {
+    display: flex;
+    align-items: end;
+}
+header li {
+    transform: translateY(-124px);
+    opacity: 0;
+}
+.header_list {
+    display: block;
+    height: auto;
+    text-decoration: none;
+}
+.header_list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    margin-bottom: 12px;
+}
+.header_list:hover {
+    text-decoration: underline;
+}
+
+
+.TeamAILogo {
+    height: 50px;
+}
+
+
+.hamburger {
+    display: flex;
+    height: 30px;
+    width: 28px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+.hamburger > span {
+    background-color: var(--text-color);
+    display: block;
+    height: 4px;
+    width: 100%;
+    position: absolute;
+    left: 15px;
+}
+.hamburger > span:nth-child(1) {
+    top: 0;
+}
+.hamburger > span:nth-child(2) {
+    top: 13px;
+}
+.hamburger > span:nth-child(3) {
+    bottom: 0;
+}
+
+.SNS_link > img {
+    height: 30px;
+}
+
+
+
+
+.footer_logo {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+
+
+/* PC display */
+@media (width >= 758px) {
+    .header_list {
+        display: flex;
+        height: auto;
+    }
+}
+/*
+=======
+=======
+test
+update 2
+test
+test2
+>>>>>>> Stashed changes
+>>>>>>> 37e06c8e8fba5d525ca74af85927101c821583aa
+*/
