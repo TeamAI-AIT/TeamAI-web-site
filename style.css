@@ -1,3 +1,4 @@
+/* <<<<<<< Updated upstream */
 * {
     margin: 0;
     padding: 0;
@@ -9,14 +10,20 @@
 :root,
 html {
     scroll-behavior: smooth;
-    font-size: 14pt;
-    font-family: 'Noto Serif JP',serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
 
     --text-color: #eee;
-    --bg-color: #222
+    --bg-color: #222;
+
+    color: var(--text-color);
+    background-color: var(--bg-color);
 
     font-feature-settings: "palt";
 }
+/* <<<<<<< HEAD */
 
 
 
@@ -37,7 +44,6 @@ li {
 
 /* header */
 header {
-    background-color: var(--bg-color);
     position: fixed;
     left: 0;
     top: 0;
@@ -57,6 +63,10 @@ header li {
     text-decoration: underline;
 }
 
+
+.TeamAILogo {
+    height: 50px;
+}
 
 
 .hamburger {
@@ -91,3 +101,13 @@ header li {
 /* PC display */
 @media (width >= 758px) {
 }
+/*
+=======
+=======
+test
+update 2
+test
+test2
+>>>>>>> Stashed changes
+>>>>>>> 37e06c8e8fba5d525ca74af85927101c821583aa
+*/

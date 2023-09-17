@@ -1,0 +1,102 @@
+/*reset css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+hero {
+    width: 100%;
+    height: 20vh;
+    color: white;
+    margin: 1rem 0;
+}
+
+hero h1 {
+    font-size: 3rem;
+    margin: 3rem 0 3rem 2rem;
+}
+
+hero .tag {
+    display: flex;
+    flex-direction: row;
+}
+
+hero p {
+    margin: 0 1rem;
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    border-color: white;
+    border-style: solid;
+    border-radius: 1rem;
+}
+
+main {
+    margin: 2rem 0;
+}
+
+main ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main li {
+    width: 40%;
+    margin: 4rem 3rem;
+}
+
+main li img {
+    width: 100%;
+    height: 100%;
+}
+
+/* モーダルウィンドウのスタイル */
+/* このスタイルの場合、worksページの高さ分スクロールできてしまう(操作的に問題はないが、スクロール操作をした場合スクロールバーが表示されるのが気になる可能性あり) */
+#modal-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*
+    visibility: hidden;
+    opacity: 0;
+    */
+    transition: all 0.3s;
+    z-index: 100;
+    background-color: black;
+}
+
+.works-detail{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.works-detail-img {
+    margin: 2rem;
+    width: 50%;
+    height: 100%;
+}
+
+.works-detail-text {
+    margin: 2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
