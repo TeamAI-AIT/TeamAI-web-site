@@ -55,7 +55,7 @@ function showModalWindow() {
     items[id].tag;
 
   // モーダルウィンドウを表示
-  document.querySelector("#modal-window").style.display = "block";
+  document.querySelector("#modal-window").classList.add("is-active");
 }
 
 //上記の関数を実行するイベントを設定
