@@ -64,27 +64,21 @@ main li img {
     left: 0;
     width: 100%;
     height: 100%;
-    /*
     visibility: hidden;
     opacity: 0;
-    */
     transition: all 0.3s;
     z-index: 100;
     background-color: black;
 }
 
+/*javascriptでis-activeクラスが追加された際モーダルウィンドウのvisibilityとopacityを書き換え*/
+#modal-window.is-active{
+    opacity: 1;
+    visibility: visible;
+}
+
 .works-detail{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    height: 80%;
-    background-color: white;
-    border-radius: 1rem;
-    padding: 2rem;
-    display: flex;
-    flex-direction: row;
+    
 }
 
 .works-detail-img {
@@ -99,4 +93,19 @@ main li img {
     height: 100%;
     display: flex;
     flex-direction: column;
+}
+
+.modal-close-btn {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -20px;
+    right: -20px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background: #ff0000;
+    border-radius: 50%;
+    cursor: pointer;
 }
