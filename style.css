@@ -10,26 +10,17 @@
 :root,
 html {
     scroll-behavior: smooth;
-<<<<<<< HEAD
-    font-size: 14pt;
     font-family: 'Noto Serif JP';
-=======
     font-size: 14px;
     font-weight: normal;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
->>>>>>> 0a4fdaf1e38f69c0efea084a3c87854079b69f3a
 
     --text-color: #eee;
     --bg-color: #222;
 
-<<<<<<< HEAD
-    background-color: #222;
-    color: #eee;
-=======
     color: var(--text-color);
     background-color: var(--bg-color);
->>>>>>> 0a4fdaf1e38f69c0efea084a3c87854079b69f3a
 
     font-feature-settings: "palt";
 }
@@ -141,11 +132,11 @@ header li {
 
 /* menu active */
 #hambur_input:checked ~ .hambur_open span:nth-child(1) {
-    top: 7px;
+    top: 13px;
     transform: rotate(45deg);
 }
 #hambur_input:checked ~ .hambur_open span:nth-child(3) {
-    bottom: 7px;
+    bottom: 13px;
     transform: rotate(-45deg);
 }
 #hambur_input:checked ~ .hambur_open span:nth-child(2) {
