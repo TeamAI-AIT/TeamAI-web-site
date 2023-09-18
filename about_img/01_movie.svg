@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_動画編集" data-name="動画編集" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="58.31" cy="23.54" r="11.64"/>
+  <path class="cls-2" d="m31.34,18.72c4.54,0,8.23,3.68,8.23,8.23s-3.68,8.23-8.23,8.23-8.23-3.68-8.23-8.23"/>
+  <rect class="cls-3" x="24.63" y="42" width="42.79" height="25" rx="4" ry="4"/>
+  <rect class="cls-3" x="71.32" y="43.35" width="13.89" height="22.3" rx="4" ry="4"/>
+  <polyline class="cls-2" points="31.34 88.1 46.02 67.89 46.02 88.1"/>
+  <polyline class="cls-2" points="60.7 88.1 46.02 67.89 46.02 88.1"/>
+</svg>

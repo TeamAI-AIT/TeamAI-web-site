@@ -4,7 +4,7 @@ h2{
 }
 @media screen and (max-width:768px) {
     h2{
-        font-size: 25px;
+        font-size: 20px;
         margin: 0;
     }
 }
@@ -82,7 +82,7 @@ button.btn {
         line-height: 1.5;
         position: relative;
         display: inline-block;
-        padding: 1rem 4rem;
+        padding: 0.5rem 2rem;
         cursor: pointer;
         -webkit-user-select: none;
         -moz-user-select: none;
@@ -100,6 +100,7 @@ button.btn {
 }
 .mail-text{
     text-align: center;
+    margin: 20px;
 }
 a.mail-btn {
     border: 2px solid #222;
