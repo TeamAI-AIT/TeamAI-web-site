@@ -78,14 +78,10 @@ main li img {
 }
 
 .works-detail{
-    
+    justify-content: center;
+    align-items: center;
 }
 
-.works-detail-img {
-    margin: 2rem;
-    width: 50%;
-    height: 100%;
-}
 
 .works-detail-text {
     margin: 2rem;
@@ -100,8 +96,8 @@ main li img {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: -20px;
-    right: -20px;
+    top: 3rem;
+    right: 3rem;
     width: 40px;
     height: 40px;
     color: #fff;
