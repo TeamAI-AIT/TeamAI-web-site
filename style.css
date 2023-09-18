@@ -35,6 +35,7 @@ body {
 }
 a {
     color: var(--text-color);
+    text-decoration: none;
 }
 li {
     list-style: none;
@@ -55,9 +56,12 @@ header {
     padding: 0 62px;
     z-index: 99;
 }
-header h1 {
+.header_logo {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
+}
+.header_logo > h1 {
+    font-size: 23px;
 }
 header li {
     transform: translateY(-124px);
@@ -65,15 +69,23 @@ header li {
 }
 .header_list {
     display: block;
-    height: auto;
     text-decoration: none;
+    left: 100%;
+    z-index: 99;
 }
 .header_list li {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
+    height: 70px;
     margin-bottom: 12px;
+}
+.header_list li:first-child {
+    margin-top: 70px;
+}
+.header_list li a {
+    font-size: 20px;
+    height: 100%;
 }
 .header_list:hover {
     text-decoration: underline;
@@ -84,8 +96,11 @@ header li {
     height: 50px;
 }
 
-
-.hamburger {
+/* hamburber menu */
+.hambur_hidden {
+    display: none;
+}
+.hambur_open {
     display: flex;
     height: 30px;
     width: 28px;
@@ -93,25 +108,53 @@ header li {
     align-items: center;
     position: relative;
     z-index: 100;
+    cursor: pointer;
 }
-.hamburger > span {
+.hambur_open > span {
+    content: '';
     background-color: var(--text-color);
     display: block;
     height: 4px;
     width: 100%;
     position: absolute;
-    left: 15px;
+    transition: 0.5s;
 }
-.hamburger > span:nth-child(1) {
+.hambur_open > span:nth-child(1) {
     top: 0;
 }
-.hamburger > span:nth-child(2) {
+.hambur_open > span:nth-child(2) {
     top: 13px;
 }
-.hamburger > span:nth-child(3) {
+.hambur_open > span:nth-child(3) {
     bottom: 0;
 }
 
+/* menu active */
+#hambur_input:checked ~ .hambur_open span:nth-child(1) {
+    top: 7px;
+    transform: rotate(45deg);
+}
+#hambur_input:checked ~ .hambur_open span:nth-child(3) {
+    bottom: 7px;
+    transform: rotate(-45deg);
+}
+#hambur_input:checked ~ .hambur_open span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(20px);
+}
+#hambur_input:checked ~ .header_list {
+    left: 0;
+}
+#hambur_input:checked ~ footer {
+    top: 100%;
+}
+
+
+
+.SNS_link {
+    display: flex;
+    justify-content: space-between;
+}
 .SNS_link > img {
     height: 30px;
 }
@@ -122,7 +165,7 @@ header li {
 .footer_logo {
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
 }
 
 
@@ -131,7 +174,12 @@ header li {
 @media (width >= 758px) {
     .header_list {
         display: flex;
+        justify-content: space-between;
+        align-content: center;
         height: auto;
+    }
+    .menu {
+        left: 100%;
     }
 }
 /*
