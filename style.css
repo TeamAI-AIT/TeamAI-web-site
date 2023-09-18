@@ -10,11 +10,6 @@
 :root,
 html {
     scroll-behavior: smooth;
-/*<<<<<<< HEAD*/
-    font-family: 'Noto Serif JP';
-/*=======
-
->>>>>>> 8e579d6636a858b78e0c60feb9d8825ff9d731a8*/
     font-size: 14px;
     font-weight: normal;
     font-family: 'M PLUS Rounded 1c', sans-serif;
