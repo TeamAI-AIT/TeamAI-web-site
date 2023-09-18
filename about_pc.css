@@ -71,6 +71,13 @@ header{
     display: flex;
     width: calc(100vw * 860 / 1920);
     height: calc(100vw * 160 / 1920);
+    background-image : linear-gradient(to right, white 8px, transparent 8px);
+    background-size: 10px 1px;
+    background-repeat: repeat-x; 
+    background-position: left bottom;
+}
+.flow .delivery{
+    background-image : linear-gradient(to right, #222 8px, transparent 8px);
 }
 .flow .box .num{
     display: flex;
@@ -79,10 +86,26 @@ header{
     align-items: center;
     width: calc(100vw * 77 / 1920);
     height: calc(100vw * 77 / 1920);
+    font-size: calc(100vw * 22 / 1920);
     background: #222;
     border-radius: 100px;
-    border: 2px solid white;
+    border: 3px solid white;
     margin: auto 0;
+    z-index: 2;
+}
+.flow .inquiry .num{
+    z-index: 2;
+}
+.flow .inquiry .num::after{
+    content: "";
+    display: flex;
+    position: relative;
+    background: white;
+    width: 2px;
+    height: calc(100vw * 750 / 1920);
+    top: calc(100vw * 412 / 1920);
+    left: calc(100vw * -7 / 1920);
+    z-index: 0;
 }
 .flow .box .content{
     display: flex;
@@ -90,6 +113,14 @@ header{
     height: calc(100vw * 160 / 1920);
 }
 .flow .box .content .heading{
-    display: flex
-    width: calc(100vw * );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw * 278 / 1920);
+    font-size: calc(100vw * 24 / 1920);
+}
+.flow .box .content p{
+    display: flex;
+    align-items: center;
+    font-size: calc(100vw * 20 / 1920);
 }
