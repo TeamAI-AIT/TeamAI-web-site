@@ -22,7 +22,7 @@ const items = [
 ];
 
 // 作品のサムネイルをクリックした際のイベントを設定するための変数
-const img_thumb = document.getElementsByClassName("work-thumb");
+let img_thumb = document.getElementsByClassName("work-thumb");
 
 // 画像をクリックした際に、画像のidタグだけを取得
 function getClickedImageId() {

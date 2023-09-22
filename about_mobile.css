@@ -19,14 +19,14 @@ header{
     width: calc(100vw * 100 / 390);
     height: calc(100vw * 100 / 390);
     margin: auto;
-    margin-top: calc(100vh * 16 / 1080);
-    margin-bottom: calc(100vh * 62 / 390);
+    margin-top: calc(100vh * 16 / 390);
+    margin-bottom: calc(100vw * 62 / 390);
 }
 .top p{
     margin: 0;
     width: calc(100vw * 272 / 390);
     font-size: calc(100vw * 14 / 390);
-    line-height: 235.8%;
+    line-height: 235%;
 }
 
 /* section skill */
@@ -42,11 +42,13 @@ header{
 }
 .skill .box div{
     display: grid;
+    align-items: center;
     justify-content: center;
 }
 .skill .box div img{
     width: calc(100vw * 50 / 390);
     height: calc(100vw * 50 / 390);
+    margin: auto;
     margin-bottom: calc(100vw * 16 / 390);
 }
 .skill .box div p{
@@ -55,63 +57,71 @@ header{
     font-size: calc(100vw * 14 / 390);
 }
 
+/* section flow */
 .flow{
     display: grid;
     justify-content: center;
-    margin-top: calc(100vw * 90 / 390);
+    margin-top: calc(100vw * 120 / 390);
 }
 .flow h3{
-    font-size: calc(100vw * 20 / 390);
     text-align: center;
-    margin-bottom: calc(100vw * 36 /390);
+    margin-bottom: calc(100vw * 36 / 390);
+    font-size: calc(100vw * 20 / 390);
 }
-.flow div{
+.flow .box{
     display: flex;
     width: calc(100vw * 296 / 390);
-    height: calc(100vw * 160 / 390);
-    background-image : linear-gradient(to right, white 8px, transparent 8px);
-    background-size: 13px 1px;
-    background-repeat: repeat-x; 
-    background-position: left bottom;
+    height: calc(100vw * 125 / 390);
+    border-top: 1px dashed white;
 }
 .flow .delivery{
-    background-image : linear-gradient(to right, #222 8px, transparent 8px);
-    margin-bottom: calc(100vw * 380 / 1920);
+    border-bottom: 1px dashed white;
 }
-.flow div .num{
+.flow .box .num{
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     width: calc(100vw * 27 / 390);
     height: calc(100vw * 27 / 390);
     font-size: calc(100vw * 16 / 390);
     background: #222;
-    border: 2px solid white;
     border-radius: 100px;
-    /* margin: auto calc(100vw * 85 / 390) auto 0; */
+    border: 1px solid white;
+    margin: auto 0;
+    z-index: 2;
+}
+.flow .inquiry .num{
+    z-index: 2;
 }
 .flow .inquiry .num::after{
     content: "";
     display: flex;
     position: relative;
     background: white;
-    top: calc(100vw * 425 / 390);
-    left: calc(100vw * -7 / 390);
-    width: 3px;
-    height: calc(100vw * 793 / 390);
-    z-index: -1;
+    width: 1px;
+    height: calc(100vw * 600 / 390);
+    top: calc(100vw * 313 / 390);
+    left: calc(100vw * -5 / 390);
+    z-index: 0;
 }
-.flow div .content .heading{
+.flow .box .content{
     display: grid;
     justify-content: center;
     align-items: center;
-    /* width: calc(100vw * 76 / 390); */
-    font-size: calc(100vw * 16 / 390);
-    /* margin-right: calc(100vw * 90 / 390); */
+    width: calc(100vw * 270 / 390);
+    height: calc(100vw * 100 / 390);
+    padding: 0 calc(100vw * 17 / 390);
 }
-.flow div .content p{
-    display: grid;
+.flow .box .content .heading{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: calc(100vw * 444 / 390);
-    font-size: calc(100vw * 14 / 1920);
+    height: calc(100vw * 50 /390);
+    font-size: calc(100vw * 16 / 390);
+}
+.flow .box .content p{
+    display: flex;
+    align-items: center;
+    font-size: calc(100vw * 14 / 390);
 }

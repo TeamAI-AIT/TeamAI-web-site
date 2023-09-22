@@ -4,8 +4,8 @@ header{
 }
 .top{
     display: grid;
-    padding-left: calc(100vw * 94 / 1920);
-    padding-right: calc(100vw * 94 / 1920);
+    padding-left: calc(100vw * 98 / 1920);
+    padding-right: calc(100vw * 98 / 1920);
 }
 .top h2{
     font-size: calc(100vw * 64 / 1920);
